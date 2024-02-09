@@ -1,0 +1,28 @@
+name: reactproject03
+
+proxy:
+  node:
+    - reactproject03.lndo.site:5173
+
+services:
+  node:
+    type: node:18
+    scanner: false
+    expose: true
+    ports:
+      - 5173:5173
+
+
+tooling:
+  npm:
+    service: node
+    description: Runs npm
+    cmd: npm
+  node:
+    service: node
+    description: Runs node commands
+    cmd: node    
+  npx:
+    service: npx
+    description: Runs npx commands
+    cmd: npx

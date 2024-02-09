@@ -1,0 +1,30 @@
+
+.container-cards {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  min-height: 20.75em;
+  overflow: hidden;
+  border-radius: .5em;
+  text-decoration: none;
+  background: white;
+  margin: 1em;
+  padding: 2.75em 2.5em;
+  box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .1);
+}
+
+.card-title {
+  color: #627084;
+  font-size: 1.5em;
+  border-bottom: 2px solid #dedede;
+  padding-bottom: .5em;
+}
+
+.card-text {
+  color: #202124;
+}
