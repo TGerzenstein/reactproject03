@@ -1,14 +1,19 @@
 
-import React from 'react'
-import TaskList from './TaskList'
+import React from 'react';
+import TaskList from './TaskList';
+import { tasks } from './tasks.js'
+import TaskForm from './TaskForm';
+
 
 function App() {
+
   return (
     <div>
       <h1>Task List</h1>
-      <TaskList />
+      <TaskForm />
+      <TaskList tasks={tasks} />
     </div>
   )
 }
 
-export default App
+export default App;
