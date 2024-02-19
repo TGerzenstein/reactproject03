@@ -13,6 +13,5 @@ export const tasks = [
         id: 3,
         title: "Study",
         description: "I am learning english",
-    }
-
+    },
 ]

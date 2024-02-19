@@ -10,13 +10,11 @@ function TaskList({ tasks }) {
 
   return (
     <div className='container-cards'>
-        {tasks.map((task) => (
-            <TaskCard 
-                key={task.id}
-                task={task} />
+        {tasks.map((task, index) => (
+            <TaskCard key={index} task={task}/> 
         ))} 
     </div>
   )
 }
 
-export default TaskList
+export default TaskList;

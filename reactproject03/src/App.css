@@ -2,6 +2,7 @@
 .container-cards {
   display: flex;
   flex-direction: row;
+  width: 80%;
 }
 
 .card {
