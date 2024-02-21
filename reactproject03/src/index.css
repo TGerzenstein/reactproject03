@@ -1,11 +1,10 @@
-#root {
+body {
   display: flex;
-  min-height: 100vh;
-  max-width: 100%;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: center;
-  background: #E7F3F1;
-  border: .75em solid white;
-  padding: 2em;
+  width: 90%;
+  background: #f1eeff;
   font-family: 'Open Sans', sans-serif;
 }

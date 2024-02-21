@@ -1,5 +1,6 @@
-import React from 'react'
-import { useState } from 'react'
+import React from 'react';
+import { useState } from 'react';
+import './App.css';
 
 function TaskForm({ createTask }) {
 
@@ -19,9 +20,11 @@ function TaskForm({ createTask }) {
    };
 
   return (
-    <div>
-        <form onSubmit={handleSubmit}>
-            <input placeholder='Text me' 
+    <div className='container-form'>
+        <form onSubmit={handleSubmit} >
+            <input  
+              className='title-form'
+              placeholder='Task' 
               onChange={(e) => setTitle(e.target.value)}
               value={title}
             
@@ -30,7 +33,7 @@ function TaskForm({ createTask }) {
                       id="" 
                       cols="30" 
                       rows="10" 
-                      placeholder='describe your task'
+                      placeholder='Description'
                       onChange={(e) => setDescription(e.target.value)}
                       value={description}
             ></textarea>
