@@ -16,18 +16,27 @@ function App() {
   
 
   function createTask(task) {
-    setTasks([...tasks, {
+    const newTask = {
       title: task.title,
-      id: task.length + 1,
+      id: tasks.length + 1,
       description: task.description
-    }])
-  } 
+    }
+    setTasks([...tasks, newTask]);
+    console.log([...tasks,newTask]);
+  }
+
+
+  function deleteTask(taskId){
+     setTasks(tasks.filter(task => task.id !== taskId))
+  }
 
   return (
     <div>
       <h1>Task List</h1>
       <TaskForm createTask={createTask}/>
-      <TaskList tasks={tasks} />
+      <TaskList tasks={tasks} 
+                deleteTask={deleteTask}
+      />
     </div>
   )
 }
