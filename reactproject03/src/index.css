@@ -1,11 +1,10 @@
 body {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
-  width: 90%;
-  background: #f1eeff;
   font-family: 'Open Sans', sans-serif;
+  background: #f1eeff;
+  width: 100%;
   line-height: 1.5rem;
 }

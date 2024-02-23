@@ -29,7 +29,8 @@ function TaskForm({ createTask }) {
               value={title}
             
             />
-            <textarea name="" 
+            <textarea name=""
+                      className='area-text' 
                       id="" 
                       cols="30" 
                       rows="10" 
