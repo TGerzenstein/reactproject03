@@ -1,17 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import TaskCard from './TaskCard';
 import './App.css';
+import { TaskContext } from './context/Context';
 
-function TaskList({ tasks, deleteTask }) {
+
+
+
+function TaskList() {
+
+  const { tasks } = useContext(TaskContext)
   
   if (tasks.length === 0) {
-    return <h1>Agree your next task... </h1>
+    return <h1 className='title'>Agree your next task... </h1>
   }  
 
   return (
     <div className='container-cards'>
         {tasks.map((task, index) => (
-            <TaskCard key={index} task={task} deleteTask={deleteTask}/> 
+            <TaskCard key={index} task={task}/> 
         ))} 
     </div>
   )
